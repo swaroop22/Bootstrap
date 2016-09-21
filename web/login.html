@@ -1,0 +1,423 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function validateForm() {
+        var un = document.getElementById("username");;]
+        var pw = document.getElementById("password");
+        var username = "wow"; 
+        var password = "wow";
+        if ((un == wow) && (pw == wow)) {
+            window.location = "HCI.html";
+            return false;
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+        }
+      }
+
+
+//Enter domain of site to search.
+var domainroot="login.html"
+
+function Gsitesearch(curobj){
+	curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+
+
+</script>
+
+<div>
+
+	 <form action="http://www.google.com/search" method="get" onsubmit="Gsitesearch(this)">
+	<b><div style="float: left; margin-left: 100px; "><img src="http://icons.iconarchive.com/icons/3xhumed/mega-games-pack-32/256/Cooking-Academy-3-icon.png" alt="" border="" height="85" width="100"></div></b> <div style="padding:30px;"></div>
+	<p style="text-align:center;margin-top:-28px; "><input name="q" type="hidden">
+		<input name="qfront" placeholder="Find a Receipe..." style="height:30px;width: 490px;" type="text"> <input value="Search"  type="submit"> 
+		<img src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-128.png" style="float:right; margin-top:-30px; width:90px; height:85px; border:0;"></p>
+
+	</form>
+</div>
+
+
+<!-- START OF SCRIPT -->
+<style type="text/css">
+	#tabmenu {
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		position: absolute;
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	/*Create a horizontal list with spacing*/
+	.tab {
+		display: table-cell;
+		margin-right: 1px;
+	}
+
+	/*Style for menu links*/
+	.tab a {
+		display:inline-block;border: 2px solid black;
+		width:210px;
+		height:50px;
+		text-align: center;
+		line-height: 50px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #000000;
+		background: #ED2D47;
+                text:  2px solid black;
+	
+    	text-decoration: none;
+	}
+
+	/*Hover state for top level links*/
+	.tab:hover a {
+		background: #FF4F67;
+	}/*Style for menu links*/
+	.tab a {
+		display:inline-block;border: 2px solid black;
+		width:210px;
+		height:50px;
+		text-align: center;
+		line-height: 50px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #000000;
+		background: #ED2D47;
+                text:  2px solid black;
+	
+    	text-decoration: none;
+	}
+
+	/*Hover state for top level links*/
+	.tab:hover a {
+		background: #FF4F67;
+	}
+
+	/*Style for dropdown links*/
+	.tab:hover #tabmenu a {
+		background: #f3f3f3;
+		color: #2f3036;
+		height: 30px;
+		line-height: 10px;
+		width: 100%;
+	}
+
+	/*Hover state for dropdown links*/
+	.tab:hover #tabmenu a:hover {
+		background: #19c589;
+		color: #fff;
+	}
+
+
+	.mainitems{
+		border: 1px solid black;
+		border-left-width: 0;
+		background-color: #D8FE89;
+	}
+
+	.headerlinks a{
+		margin: auto98px;
+		font-weight: bold;
+		color: black;
+	}
+
+	.submenus{
+		display: none;
+	}
+
+	.tab:hover >ul{
+		display:block;
+	}
+	body {
+		margin:0;
+		padding:0;
+		background: #F3FAB6;
+	}
+	#tabmenu li{
+		width:15%;
+	}
+	.nav ul {
+		list-style: none;
+		background-color: #444;
+		text-align: left;
+		padding:30px;
+		margin: 30px;
+	}
+
+	.nav li {
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.2em;
+		line-height: 40px;
+		text-align: left;
+	}
+
+	.nav a {
+		text-decoration: none;
+		color: #fff;
+		display: inline-block;
+		padding-left: 15px;
+		border-bottom: 1px solid #888;
+		transition: .3s background-color;
+	}
+
+	.nav a:hover {
+		background-color: #005f5f;
+	}
+
+	.nav a.active {
+		background-color: #aaa;
+		color: #444;
+		cursor: relative;
+	}
+
+	/* Sub Menus */
+	.nav li li {
+		font-size: .8em;
+	}
+	#search{width:500px; text-align: center;}
+	#top{
+		 width:100%;
+	}
+/*******************************************
+   Style menu for larger screens
+
+   Using 650px (130px each * 5 items), but ems
+   or other values could be used depending on other factors
+   ********************************************/
+
+   @media screen and (min-width: 650px) {
+   	.nav li {
+   		width: 30px;
+   		border-bottom: none;
+   		height: 50px;
+   		line-height: 50px;
+   		font-size: 1.4em;
+   		display: inline-block;
+   		margin-right: -4px;
+   	}
+
+   	.nav a {
+   		border-bottom: none;
+   	}
+
+   	.nav > ul > li {
+   		text-align: center;
+   	}
+
+   	.nav > ul > li > a {
+   		padding-left: 0;
+   	}
+
+   	/* Sub Menus */
+   	.nav li ul {
+   		position: relative;
+   		display: none;
+   		width: inherit;
+   	}
+
+   	.nav li:hover ul {
+   		display:inline-block;
+   	}
+
+   	.nav li ul li {
+   		display:inline-block;
+   	}
+   }
+
+   .submenus ul{
+   	width: 20px;
+   }
+   .tab ul{
+   	width:100%;
+   }
+   
+   fieldset { 
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 0em;
+    border: 2px groove (internal value);
+}
+#inputForm{
+margin: 0px 4% 0px 0px;
+border: 1px solid #000;
+background: #FFF none repeat scroll 0% 0%;
+width:98%;
+border-radius: 40px;
+}
+#img-container{
+	width: 40%;
+	float: left;
+        margin-left: 40px;
+        border-radius: 40px;
+}
+#container{
+	width: 30%;
+	float: right;
+        margin-right: 20px;
+        
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    text-align: center;
+} 
+
+li a {
+    display: block;
+    text-align: center;
+}
+/* only the submit button is matched by this selector,
+   but to be sure you could use an id or class for that button */
+
+
+
+</style>
+
+<script type="text/javascript">
+
+	startMenu = function() {
+		if (document.all&&document.getElementById) {
+			cssmenu = document.getElementById("csstopmenu");
+			for (i=0; i<cssmenu.childNodes.length; i++) {
+				node = cssmenu.childNodes[i];
+				if (node.nodeName=="LI") {
+					node.onmouseover=function() {
+						this.className+=" over";
+					}
+					node.onmouseout=function(){                  
+						this.className=this.className.replace(" over", "")
+					}
+				}
+			}
+		}
+	}
+
+	if (window.attachEvent)
+		window.attachEvent("onload", startMenu)
+	else
+		window.onload=startMenu;
+
+</script>
+
+<br>	<ul id="tabmenu">
+		<li class = "tab"><a href="login.html">Home</a>
+		<li class = "tab"><a href="HCI.html">Indian</a>
+			<ul class="submenus">
+							</ul>
+		
+		
+	</ul>
+
+
+<br><br><br>
+
+
+<!-- END OF SCRIPT -->
+
+
+<div id="clearmenu" style="clear: left"></div>
+
+<!-- END OF SCRIPT -->
+
+<!-- START OF SCRIPT -->
+
+
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa“ crossorigin="anonymous"></script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+</script>
+
+
+</head>
+
+<body bgcolor="#6699FF"><h1 style="text-align:center;padding-top:15px">
+ 	  		<div id="img-container">
+ 	  				<img src="2.jpg" alt="Mountain View" style="width:812px;height:398px; border-radius: 40px">	 
+			</div>
+ <!-- Begin Page Content -->
+            <div id="container">
+
+                <form id="inputForm" id="cooking" >
+
+				LOGIN<br>
+                                <p>Username: </p>
+                                <div class="input-group">
+<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+<input id="login-username" type="text" class="form-control" name="username" placeholder="Enter username">
+</div> 
+
+                                
+					
+					<br></br>
+                                        <p>Password:</p>
+                                    
+<div class="input-group">
+<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+<input id="login-username" type="text" class="form-control" name="username" placeholder="Enter username">
+</div> 
+					
+			
+                    <p><a href="forgotpassword.html">Forgot Password?</a></p></label>
+						
+                   <input type="submit" value="Login as User" id="cook" onclick="validateForm()">&nbsp &nbsp &nbsp 
+	
+	     			<p align="center">Not a member?
+<!-- START OF SCRIPT -->
+
+<!-- HOW TO INSTALL BUTTON LINK:
+
+  1.  Copy code into the HEAD section of document
+  2.  Put last coding into the BODY section of document  -->
+
+<!-- STEP ONE: Add code into HEAD section of document  -->
+
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Sven David Hildebrandt (shildebr@online.no) -->
+<!-- Web Site:  http://home.hia.no/~sdhild99 -->
+
+<!-- Begin
+function goToURL() { window.location = "signn.html"; }
+//  End -->
+</script>
+
+</HEAD>
+
+<!-- STEP TWO: Add code into BODY section of document  -->
+
+<BODY>
+
+<form>
+<input type=button value="Sign up" onClick="goToURL()">
+</form>
+
+<!-- END OF SCRIPT >
+
+
+                </form>
+				
+            </div><!--/ container-->
+            <!-- End Page Content -->
+			<h6 style="text-align:center;padding-top:15px;padding:20px;float:right;"> 
+				<a href="Terms.html">Terms</a>
+				&nbsp;&nbsp;&nbsp;<a href="Privacy.html">Privacy</a>
+				&nbsp;&nbsp;&nbsp;<a href="FAQ.html">FAQ</a>&nbsp;&nbsp;&nbsp;
+				<a href="contactus.html">Contact us</a>
+                        </h6>
+
+	
+
+</html>
